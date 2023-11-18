@@ -300,6 +300,8 @@ body {
 
 .personal-info__bio {
   flex-basis: 56%;
+  text-align: justify;
+  padding-right: 2rem;
 }
 
 .personal-info__data {
