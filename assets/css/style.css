@@ -125,7 +125,6 @@ body {
   border-radius: 0 10rem 10rem 0;
   height: 100%;
   min-height: 100%;
-  padding: 5rem;
 }
 .content__page {
   background-color: var(--color-principal);
@@ -269,6 +268,7 @@ body {
   padding: 6rem;
   padding-right: 3rem;
   display: block;
+  padding-bottom: 10rem;
 }
 .about__header,
 .resume__header,
