@@ -972,7 +972,7 @@ body {
 .contact__data {
   width: 100%;
   margin-bottom: 1.5rem;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   background-color: #fcfcfc;
   border: 0.1rem solid var(--color-border-reviews);
