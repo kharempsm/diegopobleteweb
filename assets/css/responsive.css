@@ -164,7 +164,7 @@
 
   .certificates__container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
   }
   .certificates__certificate {
     flex-basis: calc(30% - 1rem);
