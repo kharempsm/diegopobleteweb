@@ -138,7 +138,7 @@
           <h2 class="page__job2">Phone: +56956546097</h2>
         </section>
         <div class="reviews__container">
-          <article class="reviews__review">
+          <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio1.jpg"
@@ -171,7 +171,7 @@
               </div>
             </div>
           </article>
-          <article class="reviews__review">
+          <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio2.jpg"
@@ -195,7 +195,7 @@
                 <i class="review__icon fa-solid fa-quote-right"></i>
               </div>
             </div>
-          </article>  <article class="reviews__review">
+          </article>  <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio3.jpg"
@@ -218,7 +218,7 @@
                 <i class="review__icon fa-solid fa-quote-right"></i>
               </div>
             </div>
-          </article>  <article class="reviews__review">
+          </article>  <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio4.jpg"
@@ -244,7 +244,7 @@
                 <i class="review__icon fa-solid fa-quote-right"></i>
               </div>
             </div>
-          </article>  <article class="reviews__review">
+          </article>  <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio5.jpg"
@@ -268,11 +268,36 @@
               </div>
             </div>
           </article>
+        <article class="reviews__review reviews__review2">
+          <div class="review__image-container">
+            <img
+              src="assets/img/testimonio5.jpg"
+              class="review__image"
+              alt="cara de un cliente"
+            />
+          </div>
+
+          <div class="review__description">
+            <p class="review__text">
+            His expertise in CRO and his proficiency with analytical tools such as Google Analytics position him as a leader in the implementation and ongoing optimization of conversion strategies.
+            </p>
+          </div>
+          <div class="review__author">
+            <div class="review__author-info">
+              <h4 class="review__name">Leonardo D'amico</h4>
+              <h5 class="review__company">Publicist</h5>
+            </div>
+            <div class="review__author-icon">
+              <i class="review__icon fa-solid fa-quote-right"></i>
+            </div>
+          </div>
+        </article>
+          
         </div>
       </main>
     </div>
     <script>
-      const recomendaciones = document.querySelectorAll('.reviews__review'); // Esta línea es crucial
+      const recomendaciones = document.querySelectorAll('.reviews__review2'); // Esta línea es crucial
 let indiceActual = 0;
 
 function mostrarRecomendacion() {
