@@ -66,7 +66,7 @@
                <li class="menu__option">
                 <a href="portafolio.html" class="menu__link">
                   <i class="menu__icon fa-solid fa-briefcase"></i>
-                  <span class="menu__overlay">Projects</span>
+                  <span class="menu__overlay">Projects & Business Cases</span>
                 </a>
               </li> 
               <!-- <li class="menu__option">
@@ -140,30 +140,16 @@
         <div class="reviews__container">
           <article class="reviews__review reviews__review2">
             <div class="review__image-container">
-              <img
-                src="assets/img/testimonio1.jpg"
-                class="review__image"
-                alt="cara de un cliente"
-              />
-            </div>
-
+              <img src="assets/img/testimonio1.jpg" class="review__image" alt="cara de un cliente"/></div>
             <div class="review__description">
               <p class="review__text">
                 Diego is an exceptional Full Stack Marketer who possesses a comprehensive understanding of not only attracting and converting users into customers, but also of creating technically sound digital experiences aligned with business objectives.
               </p>
             </div>
-         
-           <div class="review__rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-
-          </div>
             <div class="review__author">
               <div class="review__author-info">
                 <h4 class="review__name">Kharem Suarez</h4>
+                <img src="assets/img/5 stars.png" alt="5stars" class="stars">
                 <h5 class="review__company">Senior Front End Developer</h5>
               </div>
               <div class="review__author-icon">
@@ -173,29 +159,25 @@
           </article>
           <article class="reviews__review reviews__review2">
             <div class="review__image-container">
-              <img
-                src="assets/img/testimonio2.jpg"
-                class="review__image"
-                alt="cara de un cliente"
-              />
-            </div>
-
+              <img src="assets/img/testimonio2.jpg" class="review__image" alt="cara de un cliente"/></div>
             <div class="review__description">
               <p class="review__text">
-                His experience in leading digital strategies is truly notable, encompassing a wide range of initiatives from SEO and SEM to social media marketing and content creation.
-
+                His experience in leading digital strategies is truly notable, encompassing a wide range of initiatives from SEO and SEM
+                to social media marketing and content creation.
               </p>
             </div>
             <div class="review__author">
               <div class="review__author-info">
                 <h4 class="review__name">Diego Salas Toledo</h4>
+                <img src="assets/img/5 stars.png" alt="5stars" class="stars">
                 <h5 class="review__company">Master's Degree in Finance, Investments, and Capital Markets</h5>
               </div>
               <div class="review__author-icon">
                 <i class="review__icon fa-solid fa-quote-right"></i>
               </div>
             </div>
-          </article>  <article class="reviews__review reviews__review2">
+          </article>
+          <article class="reviews__review reviews__review2">
             <div class="review__image-container">
               <img
                 src="assets/img/testimonio3.jpg"
@@ -212,6 +194,7 @@
             <div class="review__author">
               <div class="review__author-info">
                 <h4 class="review__name">Helmut Houzvic</h4>
+                <img src="assets/img/5 stars.png" alt="5stars" class="stars">
                 <h5 class="review__company">Data Scientist</h5>
               </div>
               <div class="review__author-icon">
@@ -236,8 +219,8 @@
             <div class="review__author">
               <div class="review__author-info">
                 <h4 class="review__name">Geraldine Valor</h4>
-                <h5 class="review__company">
-                  Communication Analysis, CRM and ERP, Email Marketing</h5>
+                <img src="assets/img/5 stars.png" alt="5stars" class="stars">
+                <h5 class="review__company">Communication Analysis, CRM and ERP, Email Marketing</h5>
               </div>
               
               <div class="review__author-icon">
@@ -261,56 +244,37 @@
             <div class="review__author">
               <div class="review__author-info">
                 <h4 class="review__name">Leonardo D'amico</h4>
-                <h5 class="review__company">Publicist</h5>
+                <img src="assets/img/5 stars.png" alt="5stars" class="stars">
+
+                <h5 class="review__company">Creative Director & Advertising Specialist | Marketing</h5>
               </div>
               <div class="review__author-icon">
                 <i class="review__icon fa-solid fa-quote-right"></i>
               </div>
             </div>
           </article>
-        <article class="reviews__review reviews__review2">
-          <div class="review__image-container">
-            <img
-              src="assets/img/testimonio5.jpg"
-              class="review__image"
-              alt="cara de un cliente"
-            />
-          </div>
-
-          <div class="review__description">
-            <p class="review__text">
-            His expertise in CRO and his proficiency with analytical tools such as Google Analytics position him as a leader in the implementation and ongoing optimization of conversion strategies.
-            </p>
-          </div>
-          <div class="review__author">
-            <div class="review__author-info">
-              <h4 class="review__name">Leonardo D'amico</h4>
-              <h5 class="review__company">Publicist</h5>
-            </div>
-            <div class="review__author-icon">
-              <i class="review__icon fa-solid fa-quote-right"></i>
-            </div>
-          </div>
-        </article>
+        
           
         </div>
       </main>
     </div>
     <script>
-      const recomendaciones = document.querySelectorAll('.reviews__review2'); // Esta línea es crucial
+const recomendaciones = document.querySelectorAll('.reviews__review2');
 let indiceActual = 0;
 
 function mostrarRecomendacion() {
   // Ocultar todas las recomendaciones
   recomendaciones.forEach(recomendacion => {
     recomendacion.style.opacity = 0; 
-    recomendacion.style.display = 'none'; 
+    recomendacion.style.visibility = 'hidden';
+    recomendacion.style.transform = 'scale(0.9)'; // Escalar a 80% antes de mostrar
   });
 
   // Mostrar la recomendación actual (con un pequeño retraso)
   setTimeout(() => {
     recomendaciones[indiceActual].style.opacity = 1; 
-    recomendaciones[indiceActual].style.display = 'block'; 
+    recomendaciones[indiceActual].style.visibility = 'visible';
+    recomendaciones[indiceActual].style.transform = 'scale(1)'; 
   }, 100); 
 
   // Actualizar el índice para la siguiente recomendación
@@ -322,7 +286,7 @@ mostrarRecomendacion();
 
 // Mostrar una recomendación cada 3 segundos
 setInterval(mostrarRecomendacion, 4000);
-    </script>
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
