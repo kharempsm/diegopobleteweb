@@ -1,11 +1,14 @@
   /*DEFINICION VARIABLES*/
 
+
   :root {
     --color-principal: #ffffff;
     --color-secundary: #049A8F;
 
+
     --color-background: #f2f7f9;
     --color-transparent: transparent;
+
 
     --color-icon: #b5b6b7;
     --color-subtitle: #888;
@@ -15,6 +18,7 @@
     --color-company: #a5a6a7;
   }
   /*ESTILOS GENERALES*/
+
 
   html {
     font-size: 8.3px;
@@ -28,6 +32,7 @@
     color: var(--color-text);
   }
 
+
   h1,
   h2,
   h3,
@@ -37,7 +42,9 @@
     color: var(--color-title);
   }
 
+
   /*IMAGEN DE FONDO*/
+
 
   body {
     background-image: url(../img/fondo.png);
@@ -47,7 +54,9 @@
     overflow: hidden;
   }
 
+
   /*ESTRUCTURA PRINCIPAL*/
+
 
   .layout {
     position: relative;
@@ -59,10 +68,12 @@
     grid-template-areas: "aside content";
     grid-template-columns: 22% 78%;
 
+
     /*SOMBRA DETRAS DEL LAYOUT*/
     border-radius: 4rem;
     box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
   }
+
 
   /*BARRA LATERAL AZUL*/
   .layout__aside {
@@ -72,17 +83,20 @@
     overflow-x: hidden;
   }
 
+
   .aside__user-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
+
     min-height: 100%;
     min-width: 30rem;
     background-color: var(--color-secundary);
     color: var(--color-principal);
   }
+
 
   .user-info__container-image {
     position: relative;
@@ -92,12 +106,14 @@
     z-index: 1;
   }
 
+
   .user-info__image {
     width: 100%;
     background-color: var(--color-principal);
     border: 3px solid var(--color-principal);
     border-radius: 20rem;
   }
+
 
   .user-info__container-image::after {
     content: "";
@@ -157,11 +173,13 @@
     margin-top: 2.6rem;
   }
 
+
   .user-info__job {
     font-size: 1.7rem;
     font-weight: 200;
     color: var(--color-principal);
   }
+
 
   .user-info__links {
     margin-bottom: 3.6rem;
@@ -181,13 +199,19 @@
     transition: all 300ms ease-in-out;
   }
 
+
   .social__option:hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.2);
   }
   .user-info__buttons {
-    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    width: 100%;
+    margin-bottom: 20px;
   }
+
+
   .user-info__btn {
     border: 2px solid var(--color-principal);
     padding: 3rem;
@@ -202,6 +226,7 @@
     background-color: var(--color-principal);
     color: var(--color-secundary);
   }
+
 
   .user-info__footer {
     position: absolute;
@@ -232,11 +257,13 @@
     margin-left: -0.5rem;
   }
 
+
   .menu__option {
     display: block;
     width: 100%;
     text-align: center;
   }
+
 
   .menu__icon {
     color: var(--color-icon);
@@ -293,6 +320,7 @@
     position: relative;
   }
 
+
   .title__color,
   .subtitle__color {
     color: var(--color-secundary);
@@ -309,11 +337,13 @@
     margin-bottom: 5rem;
   }
 
+
   .personal-info__bio {
     flex-basis: 100%;
     text-align: justify;
     padding-right: 2rem;
   }
+
 
   .personal-info__data {
     flex-basis: 44%;
@@ -332,7 +362,9 @@
     font-weight: 600;
   }
 
+
   /* GENERALES*/
+
 
   /*SERVICIOS*/
   .services__header,
@@ -347,6 +379,7 @@
     padding-right: 1.2rem;
     margin-bottom: 2.5rem;
   }
+
 
   .services__title,
   .reviews__title,
@@ -390,6 +423,7 @@
   }
   /*REVIEWS*/
 
+
   .reviews__container {
     width: 100%;
     display: flex;
@@ -397,6 +431,8 @@
     flex-wrap: wrap;
   }
   .reviews__review {
+
+
 
 
     flex-basis: calc(50% - 2.5rem);
@@ -411,22 +447,24 @@
     margin-bottom: 1rem;
   }
 
+
   .reviews__review2 {
     /* Estilos para la recomendación (mantén tus estilos actuales) */
     position: fixed; /* Para que aparezca como pop-up */
     top: 50%;
-    left: 42%;
+    left: 43%;
     transform: translate(-50%, -50%); /* Centrar el pop-up */
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
     /* Ajusta el ancho según tus necesidades */
-    width: 80%; 
-    max-width: 500px; 
-    opacity: 0; 
+    width: 80%;
+    max-width: 500px;
+    opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, transform 0.7s ease; /* Transición de opacidad y escala */
   }
+
 
   .review__image-container {
     width: 100%;
@@ -471,6 +509,7 @@
     color: var(--color-secundary);
   }
   /*CONSULTORIAS*/
+
 
   .about__clients {
     width: 100%;
@@ -574,6 +613,7 @@
   }
   /*INFORMACION EXTRA*/
 
+
   .extra__container {
     display: flex;
     flex-direction: row;
@@ -625,6 +665,7 @@
     margin-bottom: 5rem;
   }
 
+
   .timeline__items {
     position: relative;
     width: 100%;
@@ -632,6 +673,7 @@
     display: flex;
     flex-direction: row;
   }
+
 
   .timeline__header {
     flex-basis: 18%;
@@ -644,6 +686,7 @@
     font-size: 1.4rem;
   }
 
+
   .timeline__company {
     display: block;
     font-size: 1.4rem;
@@ -651,12 +694,14 @@
     color: var(--color-company);
   }
 
+
   .timeline__description {
     width: 100%;
     padding-left: 2.5rem;
     padding-right: 1.5rem;
     text-align: justify;
   }
+
 
   .timeline__title {
     font-size: 1.6rem;
@@ -668,6 +713,7 @@
     text-align: justify;
   }
 
+
   .timeline__divider {
     position: absolute;
     top: 0;
@@ -677,6 +723,7 @@
     background-color: var(--color--background--scrollbar);
     height: auto;
   }
+
 
   .timeline__divider::before {
     content: "";
@@ -689,6 +736,7 @@
     background-color: var(--color-secundary);
     border-radius: 10rem;
   }
+
 
   .timeline__divider::after {
     content: "";
@@ -703,16 +751,19 @@
     border: 2px solid var(--color-secundary);
   }
 
+
   /*DERECHA*/
   .resume__right {
     flex-basis: 35%;
     padding: 0 1.5rem;
   }
 
+
   .resume__skills {
     width: 100%;
     margin-bottom: 3rem;
   }
+
 
   .skills__title {
     display: flex;
@@ -724,12 +775,14 @@
     margin-bottom: 0.4rem;
   }
 
+
   .skills__number {
     font-size: 1.1rem;
     line-height: 1.4rem;
     margin-bottom: 0.4rem;
     color: var(--color-subtitle);
   }
+
 
   .skills__progressbar {
     height: 1rem;
@@ -738,6 +791,7 @@
     background-color: var(--color-principal);
     margin-bottom: 1.5rem;
   }
+
 
   .skills__percentage {
     /* width: 40%; */
@@ -748,14 +802,16 @@
     animation: progreso 4s ease-out forwards; /* Animación */
   }
 
+
   @keyframes progreso {
     0% {
-      width: 0%; 
+      width: 0%;
     }
     100% {
       width: var(--10%); /* Define el porcentaje de llenado */
     }
   }
+
 
   .skills__percentage--p1 {
     width: 95%;
@@ -828,6 +884,8 @@
   }
 
 
+
+
   .knowledges__list {
     display: flex;
     flex-direction: row;
@@ -841,6 +899,7 @@
     padding: 0.4rem 0.5rem;
     margin: 0.2rem 0.2rem;
   }
+
 
   .certificates__container {
     display: flex;
@@ -873,9 +932,10 @@
     animation: float 2s ease-in-out infinite; /* Agrega la animación */
   }
 
+
   @keyframes float {
     0% {
-      transform: translateY(0px); 
+      transform: translateY(0px);
     }
     50% {
       transform: translateY(-10px); /* Ajusta la altura del movimiento */
@@ -889,6 +949,10 @@
     overflow: hidden; /* Para ocultar el degradado fuera de la imagen */
   }
 
+
+ 
+
+
   .certificarte__image::before {
     content: "";
     position: absolute;
@@ -899,6 +963,7 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%); /* Degradado transparente - blanco - transparente */
     animation: brillo 4s linear infinite; /* Animación del brillo */
   }
+
 
   @keyframes brillo {
     0% {
@@ -928,9 +993,11 @@
   }
   /*PORTFOLIO*/
 
+
   .portfolio__navbar {
     margin-bottom: 3rem;
   }
+
 
   .portfolio__menu {
     display: flex;
@@ -969,15 +1036,18 @@
     transition: all 300ms ease-in-out;
   }
 
+
   .gallery__item:hover .gallery__image {
     transform: scale(1.1);
   }
+
 
   .gallery__title {
     font-size: 1.6rem;
     padding: 1.5rem 0;
     font-weight: bold;
   }
+
 
   .gallery__icon {
     opacity: 0;
@@ -1010,6 +1080,7 @@
   }
   /* BLOG*/
 
+
   .blog__articles {
     margin-bottom: 2.5rem;
     display: flex;
@@ -1017,11 +1088,13 @@
     flex-wrap: wrap;
   }
 
+
   .articles__article {
     flex-basis: 50%;
     padding: 0 1.5rem;
     padding-bottom: 3.5rem;
   }
+
 
   .article__top {
     position: relative;
@@ -1049,14 +1122,17 @@
     transition: all 300ms ease-in-out;
   }
 
+
   .article__top:hover .article__image {
     transform: scale(1.1);
   }
+
 
   .article__logo {
     transition: all 200ms ease-in-out;
     opacity: 0;
   }
+
 
   .article__icon {
     position: absolute;
@@ -1078,28 +1154,34 @@
     border-top: 0;
   }
 
+
   .article__date {
     display: block;
     font-size: 1.1rem;
 
+
     font-weight: 300;
     color: var(--color-subtitle);
   }
+
 
   .article__title {
     font-size: 1.8rem;
   }
   /*PAGINA DE CONTACTO*/
 
+
   .contact__container {
     display: flex;
     flex-direction: row;
   }
 
+
   .contact__info {
     flex-basis: 33%;
     padding: 0 1.5rem;
   }
+
 
   .contact__data {
     width: 100%;
@@ -1110,10 +1192,12 @@
     border: 0.1rem solid var(--color-border-reviews);
   }
 
+
   .contact__icon {
     font-size: 3.3rem;
     color: var(--color-secundary);
   }
+
 
   .contact__subtitle {
     font-size: 1.5rem;
@@ -1124,10 +1208,12 @@
     padding: 0 1.5rem;
   }
 
+
   .form__container {
     display: flex;
     flex-direction: row;
   }
+
 
   .form__left {
     flex-basis: 47%;
@@ -1137,6 +1223,7 @@
     position: relative;
     margin-bottom: 2.5rem;
   }
+
 
   .form__input {
     position: relative;
@@ -1155,6 +1242,7 @@
     z-index: 1;
   }
 
+
   .form__input:focus {
     border: 0.2rem solid var(--color-secundary);
   }
@@ -1168,6 +1256,7 @@
     pointer-events: none;
   }
 
+
   .form__input:focus ~ label,
   .form__input:not(:placeholder-shown) ~ label {
     top: -2rem;
@@ -1177,19 +1266,23 @@
     color: var(--color-secundary);
   }
 
+
   .form__input::-webkit-input-placeholder {
     color: transparent;
   }
 
+
   .form__input::-moz-placeholder {
     color: transparent;
   }
+
 
   .form__right {
     flex-basis: 50%;
     max-width: 50%;
     max-height: 100%;
   }
+
 
   .form__group--textarea {
     height: 100%;
@@ -1199,6 +1292,7 @@
     height: 100%;
     resize: none;
   }
+
 
   .form__button {
     cursor: pointer;
@@ -1212,10 +1306,12 @@
     transition: all 300ms ease-in-out;
   }
 
+
   .form__button:hover {
     background-color: var(--color-secundary);
     color: var(--color-principal);
   }
+
 
   .contact__map {
     width: 100%;
@@ -1224,10 +1320,12 @@
     overflow: hidden;
   }
 
+
   .contact__iframe {
     width: 100%;
     height: 14rem;
   }
+
 
   .portafolio_subtitle{
     font-weight: 400;
@@ -1249,10 +1347,99 @@
   }
   }
 
+
   @media (max-width: 500px) {
     .resume__certificates {
         margin-top: 363%;
     }
 
-  
+
+ 
   }
+  .linkedin-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+ 
+  .linkedin-post {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    max-width: 504px; /* Ancho máximo en pantallas grandes */
+    margin-bottom: 20px; /* Espacio de separación con el post de abajo */
+  }
+ 
+  .linkedin-post__container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Relación de aspecto 1:1 */
+    height: 0;
+    overflow: hidden;
+  }
+ 
+  .linkedin-post__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ 
+  @media (min-width: 768px) {
+    .linkedin-post {
+      width: 48%; /* Dos posts por fila en pantallas medianas */
+    }
+  }
+ 
+  @media (min-width: 1024px) {
+    .linkedin-post {
+      width: 32%; /* Tres posts por fila en pantallas grandes */
+    }
+  }
+ 
+  /* Estilo de la barra de desplazamiento */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+
+
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Ajusta la cantidad de desplazamiento */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Ajusta la duración y el tipo de transición */
+  }
+ 
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .hidden2 {
+    opacity: 0;
+    transform: scale(0.95); /* Escala inicial reducida */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+ 
+  .show2 {
+    opacity: 1;
+    transform: scale(1); /* Escala normal */
+  }
+
