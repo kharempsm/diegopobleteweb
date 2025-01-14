@@ -1513,3 +1513,6 @@
     color: var(--color-company);
   }
 
+  .enlace {
+    scroll-margin-top: 30px;
+  }
