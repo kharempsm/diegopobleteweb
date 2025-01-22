@@ -1517,7 +1517,14 @@
     scroll-margin-top: 30px;
   }
 
-  .hidden:hover {
-    border-color: #049a8f;
-    background-color: rgba(135, 79, 255, 0.08);
-    box-shadow: 4px 4px 8px rgba(4, 154, 143, 0.35);}
+    .reviews__review:hover {
+      border-color: #049a8f;
+      background-color: rgba(135, 79, 255, 0.08);
+      box-shadow: 4px 4px 8px rgba(4, 154, 143, 0.35);
+    }
+
+    .reviews__review2:hover {
+      border-color: #049a8f;
+      background-color: rgba(135, 79, 255, 0.08);
+      box-shadow: 4px 4px 8px rgba(4, 154, 143, 0.35);
+    }
