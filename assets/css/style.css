@@ -900,6 +900,12 @@
   .skills__percentage--CM {
     width: 80%;
   }
+  .skills__percentage--python {
+    width: 65%;
+  }
+  .skills__percentage--sql {
+    width: 55%;
+  }
 
 
 
@@ -1518,13 +1524,13 @@
   }
 
     .reviews__review:hover {
-      border-color: #049a8f;
+      border-color: var(--color-secundary);
       background-color: rgba(135, 79, 255, 0.08);
       box-shadow: 4px 4px 8px rgba(4, 154, 143, 0.35);
     }
 
     .reviews__review2:hover {
-      border-color: #049a8f;
+      border-color: var(--color-secundary);
       background-color: rgba(135, 79, 255, 0.08);
       box-shadow: 4px 4px 8px rgba(4, 154, 143, 0.35);
     }
