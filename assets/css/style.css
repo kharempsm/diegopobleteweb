@@ -390,7 +390,7 @@
     display: inline-block;
     position: relative;
     padding-right: 1.2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.0rem;
   }
 
 
@@ -904,7 +904,7 @@
     width: 45%;
   }
   .skills__percentage--sql {
-    width: 55%;
+    width: 75%;
   }
 
 
