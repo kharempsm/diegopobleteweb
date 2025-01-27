@@ -906,6 +906,23 @@
   .skills__percentage--sql {
     width: 75%;
   }
+  .skills__percentage--erre {
+    width: 45%;
+  }
+  .skills__percentage--HTML {
+    width: 90%;
+  }
+  .skills__percentage--CSS {
+    width: 90%;
+  }
+  .skills__percentage--JS {
+    width: 55%;
+  }
+
+  .user-info {
+    background-image: url("https://ibb.co/yY4mG6S");
+    background-attachment: fixed;
+  }
 
 
 
