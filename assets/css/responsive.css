@@ -116,7 +116,7 @@
   .menu__list {
     position: static;
     width: 100%;
-    /* background-color: var(--color-secundary); */
+    background-color: var(--color-secundary);
     box-shadow: none;
     margin-left: 0;
     padding: 0;
