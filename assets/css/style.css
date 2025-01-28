@@ -337,7 +337,11 @@
   .title__color,
   .subtitle__color {
     color: var(--color-secundary);
-  }
+    font-family: "Ephesis", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5.5rem;
+    }
   .title__color2,
   .subtitle__color {
     color: var(--color-secundary);
@@ -679,14 +683,14 @@
     margin-right: 0rem;
   }
   .resume__timeline {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
 
   .timeline__items {
     position: relative;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     display: flex;
     flex-direction: row;
   }
@@ -723,11 +727,11 @@
 
   .timeline__title {
     font-size: 1.6rem;
-    margin-bottom: 0.3rem;
+    /* margin-bottom: 0.3rem; */
   }
   .timeline__text {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: -0.2rem;
     text-align: justify;
   }
 
