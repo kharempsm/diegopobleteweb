@@ -168,7 +168,7 @@
   .certificates__certificate {
     flex-basis: calc(30% - 1rem);
     margin-left: 2rem;
-    width: 300px;
+    padding-top: 12px;
   }
 }
 

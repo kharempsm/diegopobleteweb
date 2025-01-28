@@ -1382,7 +1382,6 @@
 
   @media (max-width:580px){
     .resume__certificates{
-      margin-top: 235%;
     }
     .reviews__review{
       left: 10%;
@@ -1397,7 +1396,6 @@
 
   @media (max-width: 500px) {
     .resume__certificates {
-        margin-top: 363%;
     }
 
 
