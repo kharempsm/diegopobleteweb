@@ -47,7 +47,6 @@
 @media (max-width: 1160px) {
   .certificates__certificate {
     flex-basis: 40%;
-    margin-left: 3.5rem;
   }
 }
 @media (max-width: 1060px) {
@@ -169,6 +168,7 @@
   .certificates__certificate {
     flex-basis: calc(30% - 1rem);
     margin-left: 2rem;
+    width: 300px;
   }
 }
 
