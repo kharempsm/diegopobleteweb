@@ -342,6 +342,13 @@
     font-style: normal;
     font-size: 5.5rem;
     }
+    .title__name {
+      color:var(--color-text);
+      font-family: "poppins", Helvetica, sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 14px;
+      }
   .title__color2,
   .subtitle__color {
     color: var(--color-secundary);
