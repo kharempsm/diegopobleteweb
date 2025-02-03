@@ -94,3 +94,21 @@ setInterval(updateMessage, 4000);
 // Inicializa con el primer mensaje
 updateMessage();
 
+
+//IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      const delay = index * 0.2; // Ajusta el valor para controlar el delay
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, delay * 800);
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

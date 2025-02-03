@@ -726,29 +726,6 @@
     </div>
 
 
-    <script>
-
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-          if (entry.isIntersecting) {
-            const delay = index * 0.2; // Ajusta el valor para controlar el delay
-            setTimeout(() => {
-              entry.target.classList.add('show');
-            }, delay * 1000);
-          } else {
-            entry.target.classList.remove('show');
-          }
-        });
-      });
-   
-      const hiddenElements = document.querySelectorAll('.hidden');
-      hiddenElements.forEach((el) => observer.observe(el));
-   
-    </script>
-
-
-
 
   </body>
 </html>
