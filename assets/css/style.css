@@ -928,6 +928,12 @@
   .skills__percentage--CSS {
     width: 90%;
   }
+  .skills__percentage--react {
+    width: 55%;
+  }
+  .skills__percentage--angular {
+    width: 55%;
+  }
   .skills__percentage--JS {
     width: 55%;
   }
@@ -936,6 +942,15 @@
   }
   .skills__percentage--figma {
     width: 70%;
+  }
+  .skills__percentage--salesforce {
+    width: 75%;
+  }
+  .skills__percentage--hubspot {
+    width: 55%;
+  }
+  .skills__percentage--mailchimp {
+    width: 50%;
   }
 
   .user-info {
