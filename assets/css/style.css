@@ -1686,128 +1686,153 @@
           width: 45px;
         } */
 
-        .layout__kpi {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background-color: var(--color-secundary);
-          padding: 30px;
-          max-width: 50%;
-          border: 2px solid rgb(223, 223, 223);
-          border-radius: 20px;
-          margin-top: 40px;
-          position: relative; /* Para posicionar la imagen encima */
-      }
-      
-      .award {
-          position: absolute;
-          top: -20px; /* Subir la imagen encima del card */
-          left: 50%;
-          transform: translateX(-50%);
-          width: 50px; /* Ajuste de tamaño */
-      }
-      
-      .kpi__top-title {
-          font-size: 2rem;
-          color: #ffffff;
-          text-align: justify; /* Centrar texto */
-          margin-bottom: 10px;
-      }
-      
-      .kpi__bottom {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); /* Se ajusta automáticamente */
-        gap: 0px;
-        width: 100%;
-        background-color: #fff;
-        border-radius: 20px;
-        overflow: hidden;
-        align-content: center;
-        padding: 0px;
-    }
-      
-    .bottom-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-sizing: border-box;
-      border: 1.51px solid var(--color-secundary);
-      padding: 0px;
-      text-align: center;
-  }
-      
-      .kpi-1 {
-          border-bottom: 1px solid var(--color-secundary);
-          font-size: 40px;
-          color: var(--color-secundary);
-          font-weight: 600;
+                .layout__kpi {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: normal;
+                  background-color: var(--color-secundary);
+                  padding: 21px;
+                  max-width: 70%;
+                  border: 2px solid rgb(223, 223, 223);
+                  border-radius: 20px;
+                  margin-top: 40px;
+                  position: relative;
+                  /* Para posicionar la imagen encima */
+                }
+        
+                .award {
+                  position: absolute;
+                  top: -20px;
+                  /* Subir la imagen encima del card */
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 50px;
+                  /* Ajuste de tamaño */
+                }
+        
+                .kpi__top-title {
+                  font-size: 2rem;
+                  color: #ffffff;
+                  text-align: justify;
+                  /* Centrar texto */
+                  margin-bottom: -3px;
+                }
+        
+                .kpi__bottom {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+                  /* Se ajusta automáticamente */
+                  gap: 0px;
+                  width: 100%;
+                  background-color: #fff;
+                  border-radius: 20px;
+                  overflow: hidden;
+                  align-content: center;
+                  padding: 0px;
+                }
+        
+                .bottom-info {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  box-sizing: border-box;
+                  border: 1.51px solid var(--color-secundary);
+                  padding: 0px;
+                  text-align: center;
+                }
+        
+                .kpi__top-subtitle {
+                  color: var(--color-border-reviews);
+                  font-size: 12px;
+                  margin-bottom: 10px;
+                }
+        
+                .kpi-1 {
+                  border-bottom: 1px solid var(--color-secundary);
+                  font-size: 40px;
+                  color: var(--color-secundary);
+                  font-weight: 600;
+        
+                }
+        
+                .kpi-2 {
+                  padding: 10px;
+                  text-transform: capitalize;
 
-      }
-      .kpi-2 {
-        padding: 0px;
-
-    }
-      
-      .kpi-1, .kpi-2 {
-          width: 100%;
-          text-align: center;
-          margin: 5px;
-      }
-      
-      .kpi-1 sup {
-          font-size: 16px;
-          top: -10px;
-      }
-      .knowledges__option2 {
-        background: #34f948;  /* fallback for old browsers */
-        background: linear-gradient(to left, #4ca2cd, #4bcf58); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        border-radius: 15px;
-        color: var(--color-principal);
-        font-size: 1.5rem;
-        padding: 0.4rem 2rem;
-        margin: 0.8rem 0.2rem;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra gris claro */
-    
-      }
-      
-      .knowledges__group {
-        display: flex; /* Activa el diseño flexible */
-        flex-wrap: wrap; /* Permite que los elementos bajen si no caben */
-        gap: 5px; /* Espacio entre los elementos */
-        justify-content: left; /* Centra los elementos horizontalmente */
-        padding: 3px;
-    }
-
-      /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .layout__kpi {
-      width: 100%;
-      padding: 20px;
-      max-width: 100%;
-
-  }
-
-  @media (max-width: 1024px) { /* Para tablets y pantallas medianas */
-    .kpi__bottom {
-        grid-template-columns: repeat(2, minmax(220px, 1fr)); /* 2 columnas */
-    }
-}
-
-@media (max-width: 768px) { /* Para móviles */
-    .kpi__bottom {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
-    }
-}
-
-  .kpi__top-title {
-      font-size: 1.8rem;
-  }
-
-  .award {
-      width: 40px;
-  }
-}
-      
+                }
+        
+                .kpi-1,
+                .kpi-2 {
+                  width: 100%;
+                  text-align: center;
+                  
+                }
+        
+                .kpi-1 sup {
+                  font-size: 30px;
+                  font-weight: bold;
+                  font-family: 'Ephesis';
+                  top: -30px;
+                }
+        
+                .knowledges__option2 {
+                  background: #34f948;
+                  /* fallback for old browsers */
+                  background: linear-gradient(to left, #4ca2cd, #4bcf58);
+                  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                  border-radius: 15px;
+                  color: var(--color-principal);
+                  font-size: 1.5rem;
+                  padding: 0.4rem 2rem;
+                  margin: 0rem 0.2rem;
+                  justify-content: center;
+                  align-items: center;
+                  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                  /* Sombra gris claro */
+        
+                }
+        
+                .knowledges__group {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 5px;
+                  justify-content: left;
+                  padding: 10px;
+                }
+        
+                /* RESPONSIVE DESIGN */
+                @media (max-width: 768px) {
+                  .layout__kpi {
+                    width: 100%;
+                    padding: 20px;
+                    max-width: 100%;
+        
+                  }
+        
+                  @media (max-width: 1024px) {
+        
+                    /* Para tablets y pantallas medianas */
+                    .kpi__bottom {
+                      grid-template-columns: repeat(2, minmax(220px, 1fr));
+                      /* 2 columnas */
+                    }
+                  }
+        
+                  @media (max-width: 768px) {
+        
+                    /* Para móviles */
+                    .kpi__bottom {
+                      grid-template-columns: 1fr;
+                      /* 1 columna en móviles */
+                    }
+                  }
+        
+                  .kpi__top-title {
+                    font-size: 1.8rem;
+                  }
+        
+                  .award {
+                    width: 40px;
+                  }
+                }
