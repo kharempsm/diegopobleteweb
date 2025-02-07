@@ -321,7 +321,7 @@
   .portfolio__header,
   .blog__header,
   .contact__header {
-    margin-bottom: 4.5rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
   }
   .about__title,
@@ -358,7 +358,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
   }
 
 
@@ -366,6 +366,7 @@
     flex-basis: 100%;
     text-align: justify;
     padding-right: 2rem;
+    margin-top: 15px;
   }
 
 
@@ -981,6 +982,7 @@
       transform: scale(1.1);
       transition: transform 0.3s ease-in-out;
   }
+
 
   
   .certificates__container {
@@ -1841,7 +1843,6 @@
                 .slider{
                   width: 100%;
                   height: var(--height);
-                  margin-top: 10px;
                   overflow: hidden;
                   mask-image: linear-gradient(
                       to right,
