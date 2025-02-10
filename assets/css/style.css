@@ -502,6 +502,7 @@
     max-width: 9rem;
     max-height: 9rem;
     border-radius: 9rem;
+    outline: 3px solid var(--color-company);
     margin: 0 auto;
     margin-top: -4.5rem;
     margin-bottom: 2rem;
@@ -982,8 +983,6 @@
       transform: scale(1.1);
       transition: transform 0.3s ease-in-out;
   }
-
-
   
   .certificates__container {
     display: flex;
@@ -1532,8 +1531,11 @@
     opacity: 1;
     transform: scale(1); /* Escala normal */
   }
-
-
+ 
+    .reviews__review:hover {
+      transform: scale(1.04);
+      transition: transform 0.3s ease-in-out;
+  }
 
 
   .reviews__review:hover .stars {
@@ -1892,4 +1894,87 @@
                   }to{
                       left: 100%;
                   }
+              }
+
+
+
+              .marquee-container {
+                width: 100%; /* El contenedor ocupa todo el ancho */
+                overflow: hidden; /* Oculta el texto que se desborda */
+                position: relative; /* Para posicionar el fade */
+              }
+              
+              .marquee {
+                white-space: nowrap; /* Evita que el texto se corte */
+                padding-right: 100%; /* Espacio para que el texto se desplace completamente */
+                animation: marquee 10s linear infinite; /* Animación */
+              }
+              
+              .marquee p {
+                display: inline-block; /* Para que el texto no ocupe todo el ancho */
+                padding: 0 20px; /* Espacio entre palabras */
+              }
+              
+              @keyframes marquee {
+                0% {
+                  transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
+              
+              .marquee-container {
+                width: 100%; /* El contenedor ocupa todo el ancho */
+                overflow: hidden; /* Oculta el texto que se desborda */
+                position: relative; /* Para posicionar el fade */
+              }
+              
+              .marquee {
+                white-space: nowrap; /* Evita que el texto se corte */
+                padding-right: 100%; /* Espacio para que el texto se desplace completamente */
+                animation: marquee 10s linear infinite; /* Animación */
+              }
+              
+              .marquee p {
+                display: inline-block; /* Para que el texto no ocupe todo el ancho */
+                padding: 0 20px; /* Espacio entre palabras */
+              }
+              
+              @keyframes marquee {
+                0% {
+                  transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
+              
+              .marquee-container::before,
+              .marquee-container::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1; /* Para que el fade esté por encima del texto */
+                pointer-events: none; /* Para que el fade no interfiera con el scroll */
+              }
+              
+              .marquee-container::before {
+                left: 0;
+                background: linear-gradient(to right, #fff, transparent); /* Fade a la derecha */
+                width: 50px; /* Ajusta el ancho del fade */
+              }
+              
+              .marquee-container::after {
+                right: 0;
+                background: linear-gradient(to left, #fff, transparent); /* Fade a la izquierda */
+                width: 50px; /* Ajusta el ancho del fade */
+              }
+              
+              /* Media queries para hacerlo responsivo */
+              @media (max-width: 768px) {
+                .marquee {
+                  animation-duration: 15s; /* Ajusta la velocidad en pantallas pequeñas */
+                }
               }
