@@ -1015,13 +1015,22 @@
   }
   .certificate__new {
     position: absolute;
-    top: -8px; /* Ajusta la distancia desde arriba */
-    right: 1px; /* Ajusta la distancia desde la derecha */
+    top: -6px; /* Ajusta la distancia desde arriba */
+    right: 193px; /* Ajusta la distancia desde la derecha */
     width: 45px; /* Ajusta el ancho de la imagen */
     height: auto; /* Ajusta la altura automáticamente */
     animation: float 2s ease-in-out infinite; /* Agrega la animación */
   }
-
+  .companylogo {
+    position: absolute;
+    top: -28px; /* Ajusta la distancia desde arriba */
+    right: 219px; /* Ajusta la distancia desde la derecha */
+    width: 50px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    /* animation: float 2s ease-in-out infinite; Agrega la animación */
+    border-radius: 9rem;
+    background-color: white;
+  }
 
 
   @keyframes float {
