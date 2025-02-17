@@ -705,11 +705,12 @@
     flex-direction: row;
   }
 
-
+ 
   .timeline__header {
     flex-basis: 18%;
     text-align: right;
-    padding-right: 2.5rem;
+    padding-right: 0.5rem;
+
   }
   .timeline__year {
     margin: 0.3rem 0;
@@ -749,7 +750,7 @@
   .timeline__divider {
     position: absolute;
     top: 0;
-    left: 17%;
+    left: 16%;
     bottom: -18px;
     width: 1px;
     background-color: var(--color--background--scrollbar);
