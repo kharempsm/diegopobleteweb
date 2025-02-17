@@ -1033,6 +1033,14 @@
     background-color: white;
   }
 
+  @media (max-width: 768px) {
+        
+    /* Para móviles */
+    .companylogo {
+      right: 87px;
+    }
+  }
+
 
   @keyframes float {
     0% {
