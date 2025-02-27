@@ -432,6 +432,7 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 10px;
   }
   .services__service {
     flex-basis: calc(50% - 3rem);
