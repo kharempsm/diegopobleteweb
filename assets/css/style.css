@@ -402,9 +402,14 @@
     display: inline-block;
     position: relative;
     padding-right: 1.2rem;
-    margin-bottom: -1.0rem;
+    margin-bottom: 1.0rem;
   }
 
+  #areas_expertise {
+    border: 2px dashed #dadada; /* 2px de grosor, discontinua, color negro */
+    border-radius: 2rem;
+    padding: 10px;
+  }
 
   .services__title,
   .reviews__title,
