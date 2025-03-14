@@ -1445,7 +1445,47 @@
   .portafolio_subtitle{
     font-weight: 400;
     color: var(--color-text);
+    margin-bottom: 6px;
   }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap; /* Permite que los logos se acomoden en varias líneas si es necesario */
+    justify-content: left; /* Centra los logos en pantallas pequeñas */
+}
+
+.logo-container img {
+    height: 25px;
+    width: auto;
+    margin-left: 5px;
+}
+
+/* 📱 Estilos para pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+    .logo-container {
+        justify-content: center; /* Centra los logos */
+        gap: 5px; /* Reduce el espacio entre logos */
+    }
+
+    .logo-container img {
+        height: 20px; /* Reduce el tamaño de los logos en pantallas pequeñas */
+        margin-left: 3px;
+    }
+}
+
+/* 🖥️ Estilos para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {
+    .logo-container {
+        gap: 15px; /* Aumenta el espacio entre logos */
+    }
+
+    .logo-container img {
+        height: 30px; /* Aumenta el tamaño de los logos en pantallas grandes */
+    }
+}
 
 
   @media (max-width:580px){
