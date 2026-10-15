@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Diego Poblete's learning and course collection." />
+    <title>Courses | Diego Poblete</title>
+    <link rel="icon" type="image/webp" href="assets/img/favicon 2.webp" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/menu.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <div class="user-info__general">
+            <div class="user-info__container-image"><img src="foto%20Diego.jpg" class="user-info__image" alt="Portrait of Diego Poblete" /></div>
+            <h2 class="user-info__name">Diego Poblete</h2>
+            <h4 class="user-info__job">Digital Marketing Master</h4>
+          </div>
+          <nav class="layout__menu" aria-label="Primary navigation">
+            <ul class="menu__list">
+              <li class="menu__option"><a href="index.html" class="menu__link"><i class="menu__icon fa-solid fa-house"></i><span class="menu__overlay">Home</span></a></li>
+              <li class="menu__option"><a href="sobre-mi.html" class="menu__link"><i class="menu__icon fa-solid fa-user"></i><span class="menu__overlay">About Me</span></a></li>
+              <li class="menu__option"><a href="estudios.html" class="menu__link"><i class="menu__icon fa-solid fa-graduation-cap"></i><span class="menu__overlay">Resume</span></a></li>
+              <li class="menu__option"><a href="portafolio.html" class="menu__link"><i class="menu__icon fa-solid fa-briefcase"></i><span class="menu__overlay">Projects &amp; Business Cases</span></a></li>
+              <li class="menu__option"><a href="books.html" class="menu__link"><i class="menu__icon fa-solid fa-book-open"></i><span class="menu__overlay">Books</span></a></li>
+              <li class="menu__option"><a href="movies-series.html" class="menu__link"><i class="menu__icon fa-solid fa-film"></i><span class="menu__overlay">Movies &amp; Series</span></a></li>
+              <li class="menu__option"><a href="courses.html" class="menu__link menu__link--active" aria-current="page"><i class="menu__icon fa-solid fa-laptop-code"></i><span class="menu__overlay">Courses</span></a></li>
+              <li class="menu__option"><a href="contacto.html" class="menu__link"><i class="menu__icon fa-solid fa-envelope"></i><span class="menu__overlay">Contact</span></a></li>
+            </ul>
+          </nav>
+          <div class="user-info__buttons" role="group" aria-label="Download resume">
+            <a href="CV%20Diego%20Poblete%202026%20ES.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-ES-2026.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in Spanish</span></a>
+            <a href="CV%20Diego%20Poblete%202025%20EN.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-EN-2025.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in English</span></a>
+          </div>
+          <footer class="user-info__footer">Email: dpobletem@uchile.cl<br>Phone: +56956546097<br>&copy; 2026 Diego Poblete</footer>
+        </section>
+      </aside>
+
+      <div class="layout__menu-toggle" aria-label="Open navigation" role="button" tabindex="0"><i class="toglle__icon fa-solid fa-bars" aria-hidden="true"></i><i class="toglle__icon fa-solid fa-xmark" aria-hidden="true"></i></div>
+
+      <main class="layout__content">
+        <section class="content__page content__courses">
+          <header class="collection__header"><h1 class="collection__title">Courses</h1></header>
+          <p class="collection__intro">Learning becomes durable when it moves from a saved tab into practice. These courses map the skills I am building now, the paths I have completed, and the ideas waiting for the right project to make them real.</p>
+
+          <div class="collection-loading" role="status" aria-live="polite">
+            <span class="collection-loading__spinner" aria-hidden="true"></span>
+            <div>
+              <h2 class="collection-loading__title">Course library in progress</h2>
+              <p class="collection-loading__text">I’m currently gathering and organizing the courses I’m studying, have completed, or want to explore next. This space will be updated soon.</p>
+            </div>
+          </div>
+
+          <div class="collection__shelf collection__shelf--pending" aria-label="Course collection" aria-hidden="true">
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-book-open" aria-hidden="true"></i>Studying</span><i class="collection-card__icon fa-solid fa-laptop-code" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Completed</span><i class="collection-card__icon fa-solid fa-certificate" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>Wishlist</span><i class="collection-card__icon fa-solid fa-graduation-cap" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Completed</span><i class="collection-card__icon fa-solid fa-certificate" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-book-open" aria-hidden="true"></i>Studying</span><i class="collection-card__icon fa-solid fa-laptop-code" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a course image"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>Wishlist</span><i class="collection-card__icon fa-solid fa-graduation-cap" aria-hidden="true"></i><span class="collection-card__cover-label">Add course image</span></div><h2 class="collection-card__title">Course title</h2><p class="collection-card__meta">Platform</p></article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

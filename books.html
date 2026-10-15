@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Diego Poblete's reading shelf." />
+    <title>Books | Diego Poblete</title>
+    <link rel="icon" type="image/webp" href="assets/img/favicon 2.webp" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/menu.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <div class="user-info__general">
+            <div class="user-info__container-image"><img src="foto%20Diego.jpg" class="user-info__image" alt="Portrait of Diego Poblete" /></div>
+            <h2 class="user-info__name">Diego Poblete</h2>
+            <h4 class="user-info__job">Digital Marketing Master</h4>
+          </div>
+          <nav class="layout__menu" aria-label="Primary navigation">
+            <ul class="menu__list">
+              <li class="menu__option"><a href="index.html" class="menu__link"><i class="menu__icon fa-solid fa-house"></i><span class="menu__overlay">Home</span></a></li>
+              <li class="menu__option"><a href="sobre-mi.html" class="menu__link"><i class="menu__icon fa-solid fa-user"></i><span class="menu__overlay">About Me</span></a></li>
+              <li class="menu__option"><a href="estudios.html" class="menu__link"><i class="menu__icon fa-solid fa-graduation-cap"></i><span class="menu__overlay">Resume</span></a></li>
+              <li class="menu__option"><a href="portafolio.html" class="menu__link"><i class="menu__icon fa-solid fa-briefcase"></i><span class="menu__overlay">Projects &amp; Business Cases</span></a></li>
+              <li class="menu__option"><a href="books.html" class="menu__link menu__link--active" aria-current="page"><i class="menu__icon fa-solid fa-book-open"></i><span class="menu__overlay">Books</span></a></li>
+              <li class="menu__option"><a href="movies-series.html" class="menu__link"><i class="menu__icon fa-solid fa-film"></i><span class="menu__overlay">Movies &amp; Series</span></a></li>
+              <li class="menu__option"><a href="courses.html" class="menu__link"><i class="menu__icon fa-solid fa-laptop-code"></i><span class="menu__overlay">Courses</span></a></li>
+              <li class="menu__option"><a href="contacto.html" class="menu__link"><i class="menu__icon fa-solid fa-envelope"></i><span class="menu__overlay">Contact</span></a></li>
+            </ul>
+          </nav>
+          <div class="user-info__buttons" role="group" aria-label="Download resume">
+            <a href="CV%20Diego%20Poblete%202026%20ES.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-ES-2026.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in Spanish</span></a>
+            <a href="CV%20Diego%20Poblete%202025%20EN.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-EN-2025.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in English</span></a>
+          </div>
+          <footer class="user-info__footer">Email: dpobletem@uchile.cl<br>Phone: +56956546097<br>&copy; 2026 Diego Poblete</footer>
+        </section>
+      </aside>
+
+      <div class="layout__menu-toggle" aria-label="Open navigation" role="button" tabindex="0"><i class="toglle__icon fa-solid fa-bars" aria-hidden="true"></i><i class="toglle__icon fa-solid fa-xmark" aria-hidden="true"></i></div>
+
+      <main class="layout__content">
+        <section class="content__page content__books">
+          <header class="collection__header"><h1 class="collection__title">Books</h1></header>
+          <p class="collection__intro">Books are a quiet way to compound perspective. This shelf brings together ideas about technology, strategy, leadership, communication, parenthood and personal growth—because the best lessons become more useful when they are revisited in a new season of life.</p>
+
+          <div class="collection__shelf" aria-label="Book collection">
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/9151976-L.jpg')" role="img" aria-label="The Phoenix Project book cover"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>To read</span></div><h2 class="collection-card__title">The Phoenix Project</h2><p class="collection-card__meta">Gene Kim, Kevin Behr &amp; George Spafford</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/10354937-L.jpg')" role="img" aria-label="Team Topologies book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Team Topologies</h2><p class="collection-card__meta">Matthew Skelton &amp; Manuel Pais</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/1711809-L.jpg')" role="img" aria-label="Crucial Conversations book cover"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>To read</span></div><h2 class="collection-card__title">Crucial Conversations</h2><p class="collection-card__meta">Kerry Patterson, Joseph Grenny et al.</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/6954850-L.jpg')" role="img" aria-label="Good Strategy Bad Strategy book cover"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-book-open" aria-hidden="true"></i>Reading</span></div><h2 class="collection-card__title">Good Strategy Bad Strategy</h2><p class="collection-card__meta">Richard Rumelt</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/9180157-L.jpg')" role="img" aria-label="Antifragile book cover"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>To read</span></div><h2 class="collection-card__title">Antifragile</h2><p class="collection-card__meta">Nassim Nicholas Taleb</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/8088432-L.jpg')" role="img" aria-label="Radical Candor book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Radical Candor</h2><p class="collection-card__meta">Kim Scott</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/8870503-L.jpg')" role="img" aria-label="Fair Play book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Fair Play</h2><p class="collection-card__meta">Eve Rodsky</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/10706481-L.jpg')" role="img" aria-label="Measure What Matters book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Measure What Matters</h2><p class="collection-card__meta">John Doerr</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/7285986-L.jpg')" role="img" aria-label="Essentialism book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Essentialism</h2><p class="collection-card__meta">Greg McKeown</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/13290711-L.jpg')" role="img" aria-label="Thinking Fast and Slow book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Thinking, Fast and Slow</h2><p class="collection-card__meta">Daniel Kahneman</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/12539702-L.jpg')" role="img" aria-label="Atomic Habits book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">Atomic Habits</h2><p class="collection-card__meta">James Clear</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/2195715-L.jpg')" role="img" aria-label="A Confederacy of Dunces book cover"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Read</span></div><h2 class="collection-card__title">A Confederacy of Dunces</h2><p class="collection-card__meta">John Kennedy Toole</p></article>
+            <article class="collection-card"><div class="collection-card__cover" style="background-image:url('https://covers.openlibrary.org/b/id/12198207-L.jpg')" role="img" aria-label="The Whole-Brain Child book cover"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-book-open" aria-hidden="true"></i>Reading</span></div><h2 class="collection-card__title">The Whole-Brain Child</h2><p class="collection-card__meta">Daniel J. Siegel &amp; Tina Payne Bryson</p></article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

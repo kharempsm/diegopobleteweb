@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Diego Poblete's movies and series collection." />
+    <title>Movies &amp; Series | Diego Poblete</title>
+    <link rel="icon" type="image/webp" href="assets/img/favicon 2.webp" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/menu.js" defer></script>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <div class="user-info__general">
+            <div class="user-info__container-image"><img src="foto%20Diego.jpg" class="user-info__image" alt="Portrait of Diego Poblete" /></div>
+            <h2 class="user-info__name">Diego Poblete</h2>
+            <h4 class="user-info__job">Digital Marketing Master</h4>
+          </div>
+          <nav class="layout__menu" aria-label="Primary navigation">
+            <ul class="menu__list">
+              <li class="menu__option"><a href="index.html" class="menu__link"><i class="menu__icon fa-solid fa-house"></i><span class="menu__overlay">Home</span></a></li>
+              <li class="menu__option"><a href="sobre-mi.html" class="menu__link"><i class="menu__icon fa-solid fa-user"></i><span class="menu__overlay">About Me</span></a></li>
+              <li class="menu__option"><a href="estudios.html" class="menu__link"><i class="menu__icon fa-solid fa-graduation-cap"></i><span class="menu__overlay">Resume</span></a></li>
+              <li class="menu__option"><a href="portafolio.html" class="menu__link"><i class="menu__icon fa-solid fa-briefcase"></i><span class="menu__overlay">Projects &amp; Business Cases</span></a></li>
+              <li class="menu__option"><a href="books.html" class="menu__link"><i class="menu__icon fa-solid fa-book-open"></i><span class="menu__overlay">Books</span></a></li>
+              <li class="menu__option"><a href="movies-series.html" class="menu__link menu__link--active" aria-current="page"><i class="menu__icon fa-solid fa-film"></i><span class="menu__overlay">Movies &amp; Series</span></a></li>
+              <li class="menu__option"><a href="courses.html" class="menu__link"><i class="menu__icon fa-solid fa-laptop-code"></i><span class="menu__overlay">Courses</span></a></li>
+              <li class="menu__option"><a href="contacto.html" class="menu__link"><i class="menu__icon fa-solid fa-envelope"></i><span class="menu__overlay">Contact</span></a></li>
+            </ul>
+          </nav>
+          <div class="user-info__buttons" role="group" aria-label="Download resume">
+            <a href="CV%20Diego%20Poblete%202026%20ES.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-ES-2026.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in Spanish</span></a>
+            <a href="CV%20Diego%20Poblete%202025%20EN.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-EN-2025.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in English</span></a>
+          </div>
+          <footer class="user-info__footer">Email: dpobletem@uchile.cl<br>Phone: +56956546097<br>&copy; 2026 Diego Poblete</footer>
+        </section>
+      </aside>
+
+      <div class="layout__menu-toggle" aria-label="Open navigation" role="button" tabindex="0"><i class="toglle__icon fa-solid fa-bars" aria-hidden="true"></i><i class="toglle__icon fa-solid fa-xmark" aria-hidden="true"></i></div>
+
+      <main class="layout__content">
+        <section class="content__page content__movies-series">
+          <header class="collection__header"><h1 class="collection__title">Movies &amp; Series</h1></header>
+          <p class="collection__intro">Great stories make complex lives feel briefly legible. This collection keeps track of what I am watching, what has stayed with me, and the films or series worth revisiting for the craft, the questions, or simply the feeling they leave behind.</p>
+
+          <div class="collection__shelf" aria-label="Movies and series collection">
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-play" aria-hidden="true"></i>Watching</span><i class="collection-card__icon fa-solid fa-film" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Watched</span><i class="collection-card__icon fa-solid fa-clapperboard" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>Watchlist</span><i class="collection-card__icon fa-solid fa-ticket" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--rewatch"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i>Rewatch</span><i class="collection-card__icon fa-solid fa-rotate-right" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--completed"><i class="fa-solid fa-check" aria-hidden="true"></i>Watched</span><i class="collection-card__icon fa-solid fa-clapperboard" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--current"><i class="fa-solid fa-play" aria-hidden="true"></i>Watching</span><i class="collection-card__icon fa-solid fa-film" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--rewatch"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i>Rewatch</span><i class="collection-card__icon fa-solid fa-rotate-right" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+            <article class="collection-card"><div class="collection-card__cover" role="img" aria-label="Placeholder for a movie or series poster"><span class="collection-card__status collection-card__status--wishlist"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>Watchlist</span><i class="collection-card__icon fa-solid fa-ticket" aria-hidden="true"></i><span class="collection-card__cover-label">Add poster</span></div><h2 class="collection-card__title">Movie or series title</h2><p class="collection-card__meta">Creator · Year</p></article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const movieCollection = [
+        ['The Godfather', 'Francis Ford Coppola · 1972', 'Rewatch', 'https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg'],
+        ['Forrest Gump', 'Robert Zemeckis · 1994', 'Rewatch', 'https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg'],
+        ['Jurassic Park', 'Steven Spielberg · 1993', 'Rewatch', 'https://image.tmdb.org/t/p/w500/d9mtMGQDLANKieb9PbD3yK7xxzo.jpg'],
+        ['Fight Club', 'David Fincher · 1999', 'Rewatch', 'https://image.tmdb.org/t/p/w500/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg'],
+        ['The Silence of the Lambs', 'Jonathan Demme · 1991', 'Watchlist', 'https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg'],
+        ['Blade Runner', 'Ridley Scott · 1982', 'Watchlist', 'https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg'],
+        ['The Matrix', 'The Wachowskis · 1999', 'Rewatch', 'https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg'],
+        ['Star Wars', 'George Lucas · 1977', 'Rewatch', 'https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg'],
+        ['Life Is Beautiful', 'Roberto Benigni · 1997', 'Watched', 'https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg'],
+        ['Apocalypse Now', 'Francis Ford Coppola · 1979', 'Watchlist', 'https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg'],
+        ["Schindler's List", 'Steven Spielberg · 1993', 'Rewatch', 'https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg'],
+        ['Spirited Away', 'Hayao Miyazaki · 2001', 'Watchlist', 'https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg']
+      ];
+      document.querySelectorAll('.content__movies-series .collection-card').forEach((card, index) => {
+        const item = movieCollection[index];
+        if (!item) return;
+        const cover = card.querySelector('.collection-card__cover');
+        const status = card.querySelector('.collection-card__status');
+        card.querySelector('.collection-card__title').textContent = item[0];
+        card.querySelector('.collection-card__meta').textContent = item[1];
+        cover.style.backgroundImage = `url("${item[3]}")`;
+        cover.setAttribute('aria-label', `${item[0]} poster`);
+        status.innerHTML = `<i class="fa-solid ${item[2] === 'Rewatch' ? 'fa-rotate-right' : item[2] === 'Watchlist' ? 'fa-bookmark' : 'fa-check'}" aria-hidden="true"></i>${item[2]}`;
+        const statusClass = item[2] === 'Watched' ? 'completed' : item[2].toLowerCase();
+        status.className = `collection-card__status collection-card__status--${statusClass}`;
+      });
+
+      movieCollection[7][0] = 'Star Wars: Episode IV – A New Hope';
+      const seriesCollection = [
+        ['Mad Men', 'Matthew Weiner · 2007', 'Watched', 'https://image.tmdb.org/t/p/w500/5jOedTeytYzlJZwU66MFjmLHhHX.jpg'],
+        ['Game of Thrones', 'David Benioff & D. B. Weiss · 2011', 'Rewatch', 'https://image.tmdb.org/t/p/w500/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg'],
+        ['House of the Dragon', 'Ryan Condal & George R. R. Martin · 2022', 'Watched', 'https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg'],
+        ['The Big Bang Theory', 'Chuck Lorre & Bill Prady · 2007', 'Watching', 'https://image.tmdb.org/t/p/w500/euKFiO5M125rpngFRBbSW83beeI.jpg'],
+        ['Black Mirror', 'Charlie Brooker · 2011', 'Watched', 'https://image.tmdb.org/t/p/w500/7PRddO7z7mcPi21nZTCMGShAyy1.jpg'],
+        ['Chernobyl', 'Craig Mazin · 2019', 'Watched', 'https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg'],
+        ['Devs', 'Alex Garland · 2020', 'Watchlist', 'https://image.tmdb.org/t/p/w500/n6LIjlzlTFbowOik0EghVJUTysA.jpg'],
+        ['Silicon Valley', 'Mike Judge · 2014', 'Watchlist', 'https://image.tmdb.org/t/p/w500/4ptpmWBVD9HY9hMh8Cbs6SMiy7p.jpg']
+      ];
+      const shelf = document.querySelector('.content__movies-series .collection__shelf');
+      const existingCards = [...shelf.querySelectorAll(':scope > .collection-card')];
+      const movieLane = document.createElement('section');
+      movieLane.className = 'collection-lane';
+      movieLane.innerHTML = '<h2 class="collection-lane__title">Movies</h2><div class="collection-lane__track" aria-label="Movies collection"></div>';
+      const movieTrack = movieLane.querySelector('.collection-lane__track');
+      existingCards.forEach((card) => movieTrack.appendChild(card));
+      movieTrack.children[7].querySelector('.collection-card__title').textContent = 'Star Wars: Episode IV – A New Hope';
+      const statusClass = (status) => status === 'Watched' ? 'completed' : status === 'Watching' ? 'current' : status.toLowerCase();
+      const iconClass = (status) => status === 'Rewatch' ? 'fa-rotate-right' : status === 'Watchlist' ? 'fa-bookmark' : status === 'Watching' ? 'fa-play' : 'fa-check';
+      const createCard = (item) => {
+        const card = document.createElement('article');
+        card.className = 'collection-card';
+        card.innerHTML = `<div class="collection-card__cover" style="background-image:url('${item[3]}')" role="img" aria-label="${item[0]} poster"><span class="collection-card__status collection-card__status--${statusClass(item[2])}"><i class="fa-solid ${iconClass(item[2])}" aria-hidden="true"></i>${item[2]}</span></div><h3 class="collection-card__title">${item[0]}</h3><p class="collection-card__meta">${item[1]}</p>`;
+        return card;
+      };
+      movieTrack.replaceChildren(...movieCollection.map(createCard));
+      const seriesLane = document.createElement('section');
+      seriesLane.className = 'collection-lane';
+      seriesLane.innerHTML = '<h2 class="collection-lane__title">Series</h2><div class="collection-lane__track" aria-label="Series collection"></div>';
+      const seriesTrack = seriesLane.querySelector('.collection-lane__track');
+      seriesCollection.forEach((item) => {
+        seriesTrack.appendChild(createCard(item));
+      });
+      shelf.replaceChildren(movieLane, seriesLane);
+
+    </script>
+  </body>
+</html>

@@ -178,6 +178,9 @@
 }
 
 @media (max-width: 800px) {
+  .collection__shelf {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .reviews__container {
     flex-direction: column;
   }
@@ -245,6 +248,18 @@
 }
 
 @media (max-width: 480px) {
+  .content__books,
+  .content__movies-series {
+    padding: 3rem 2rem 6rem;
+  }
+  .collection__group-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .collection__shelf {
+    grid-template-columns: 1fr;
+  }
   .page__name {
     font-size: 4.8rem;
     line-height: 5.6rem;
