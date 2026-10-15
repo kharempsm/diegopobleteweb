@@ -3,7 +3,7 @@
 
   :root {
     --color-principal: #ffffff;
-    --color-secundary: blue;
+    --color-secundary: #577C97;
 
 
     --color-background: #f2f7f9;
@@ -262,9 +262,12 @@
   }
   .user-info__buttons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     justify-content: center; /* Centra el botón horizontalmente */
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 
 
@@ -275,18 +278,27 @@
 
 
   .user-info__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    min-width: 20rem;
     border: 2px solid var(--color-principal);
-    padding: 3rem;
-    padding-top: 1.3rem;
-    padding-bottom: 1.3rem;
+    padding: 1.2rem 2rem;
     border-radius: 3.2rem;
     color: var(--color-principal);
+    text-decoration: none;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
     transition: all 200ms ease-in-out;
   }
   .user-info__btn:hover {
     background-color: var(--color-principal);
     color: var(--color-secundary);
+  }
+
+  .user-info__btn:focus-visible {
+    outline: 0.3rem solid #fffeca;
+    outline-offset: 0.3rem;
   }
 
 
@@ -340,6 +352,9 @@
     transition: all 300ms ease-in-out;
   }
   .menu__icon:hover {
+    color: var(--color-secundary);
+  }
+  .menu__link--active .menu__icon {
     color: var(--color-secundary);
   }
   .menu__overlay {

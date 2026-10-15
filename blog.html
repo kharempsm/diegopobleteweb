@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1"
     />
-    <title>Portafolio-DiegoPoblete</title>
+    <title>Blog - Diego Poblete</title>
+    <link rel="icon" type="image/webp" href="assets/img/favicon 2.webp" />
     <link
       rel="stylesheet"
       href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/scroll.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -46,7 +46,7 @@
           <nav class="layout__menu">
             <ul class="menu__list">
               <li class="menu__option">
-                <a href="index.html" class="menu__link menu__link--active">
+                <a href="index.html" class="menu__link">
                   <i class="menu__icon fa-solid fa-house"></i>
                   <span class="menu__overlay">Home</span>
                 </a>
@@ -70,7 +70,7 @@
                 </a>
               </li>
               <li class="menu__option">
-                <a href="blog.html" class="menu__link">
+                <a href="blog.html" class="menu__link menu__link--active" aria-current="page">
                   <i class="menu__icon fa-solid fa-book"></i>
                   <span class="menu__overlay">Blog</span>
                 </a>
@@ -104,13 +104,18 @@
             </ul>
           </div>
 
-          <!-- BOTON CURRICULUM -->
-          <div class="user-info__buttons">
-            <a href="#" class="user-info__btn">Descargar CV</a>
+          <!-- DESCARGAS DE CURRÍCULUM -->
+          <div class="user-info__buttons" role="group" aria-label="Descargar currículum">
+            <a href="CV%20Diego%20Poblete%202026%20ES.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-ES-2026.pdf" aria-label="Descargar CV en español, PDF">
+              <i class="fa-solid fa-download" aria-hidden="true"></i><span>CV en español</span>
+            </a>
+            <a href="CV%20Diego%20Poblete%202025%20EN.docx.pdf" class="user-info__btn user-info__btn--cv" download="CV-Diego-Poblete-EN-2025.pdf" aria-label="Download CV in English, PDF">
+              <i class="fa-solid fa-download" aria-hidden="true"></i><span>CV in English</span>
+            </a>
           </div>
           <!-- FOOTER -->
           <footer class="user-info__footer">
-            &copy; 2023 Diego Poblete WEB
+            &copy; 2026 Diego Poblete
           </footer>
         </section>
       </aside>
