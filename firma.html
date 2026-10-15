@@ -1,127 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firma profesional | Diego Poblete</title>
     <style>
-      body {
-          font-family: Arial, sans-serif;
+      @keyframes signature-glow {
+        0%, 100% { opacity: 0.72; }
+        50% { opacity: 1; }
       }
-      .signature {
-          display: flex;
-          align-items: start;
-          padding-top: 5px;
-          display: grid;
-          grid-template-columns: 100px 1fr;
-          grid-template-rows: 100px 0px;
-          gap: 3px;
-          width: 650px;
-      }
-      .profile-pic {
-          width: 95px;
-          height: 95px;
-          border-radius: 50%;
-          margin-right: 15px;
-          grid-area: 1 / 1 / 2 / 2;
-          background-color: #2980b9;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-      .info {
-          flex-grow: 1;
-      }
-      .name {
-          font-size: 18px;
-          color: #049a8f;
-          font-weight: bold;
-      }
-      .position {
-          font-size: 14px;
-          color: #444;
-      }
-      .contact {
-          font-size: 12px;
-          margin-top: 5px;
-      }
-      .contact a {
-          color: #049a8f;
-          text-decoration: none;
-      }
-      .social-icons img {
-          width: 20px;
-          margin-right: 5px;
-      }
-      .social-icons {
-          margin-top: 15px;
-      }
-      .cta-container {
-          display: flex;
-          align-items: center;
-          background: #049a8f;
-          padding: 7px;
-          border-radius: 20px;
-          margin-top: 18px;
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-          grid-area: 2 / 1 / 3 / 3;
-          background-color: #049a8f;
-          color: white;
-          justify-content: center;
-          width: 480px;
-          justify-content: space-evenly;
-      }
-      .cta-text {
-          font-size: 16px;
-          font-weight: bold;
-          color: white;
-          margin-right: 15px;
-      }
-      .cta-button {
-          background: #049a8f;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 50px;
-          text-decoration: none;
-          font-size: 14px;
-          border: 2px solid white;
-          box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
-          transition: all 200ms ease-in-out;
-      }
-      .cta-button:hover {
-          transform: scale(1.05);
-      }
-      .cta-image {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          margin-left: auto;
-      }
-  </style>
 
+      .signature-accent {
+        animation: signature-glow 3s ease-in-out infinite;
+      }
 
+      @media (prefers-reduced-motion: reduce) {
+        .signature-accent {
+          animation: none;
+        }
+      }
+    </style>
   </head>
-  <body>
-      <div class="signature">
-        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEvXY_FLfeceQ/profile-displayphoto-shrink_200_200/B4EZRcbRiuHAAc-/0/1736717442039?e=1746057600&v=beta&t=4AqYQfQ9u7GiWV1E1Ned0emOvGFWiWeC5ATyiJGnt2s" alt="Diego Poblete" class="profile-pic">
-        <div class="info">
-          <div class="name">Diego Poblete Moreno</div>
-          <div class="position">Master's in Digital Marketing, <strong>Universidad de Chile</strong></div>
-          <div class="contact">
-            <strong>P</strong> +569 5654 6097 &nbsp; <strong>E</strong> <a href="mailto:dpobletem@fen.uchile.cl">dpobletem@fen.uchile.cl</a> <br>
-            <strong>W</strong> <a href="https://diegopobleteweb.netlify.app/sobre-mi">Web Diego Poblete</a>
-            
-          </div>
-          <div class="social-icons">
-            <a href="https://diegopobleteweb.netlify.app/sobre-mi" class="cta-button">Linkedin</a>
-            
-            <a href="https://diegopobleteweb.netlify.app/sobre-mi" class="cta-button">WhatsApp</a>
-
-          </div>      
-        </div>    
-      </div>
-      <div class="cta-container">
-            <div class="cta-text">CREATING EXPERIENCES THAT <br> <strong>PEOPLE LOVE</strong></div>
-
-            <a href="https://diegopobleteweb.netlify.app/sobre-mi" class="cta-button">View my Portfolio</a>
-          </div>
-    </body>
+  <body style="margin: 0; padding: 24px; background: #f2f7f9;">
+    <!-- Copia únicamente la tabla siguiente y pégala en la firma de Gmail. -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="650" style="width: 100%; max-width: 650px; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; color: #1f2933; background: #ffffff;">
+      <tr>
+        <td class="signature-accent" width="5" style="width: 5px; background: #577c97; font-size: 0; line-height: 0;">&nbsp;</td>
+        <td style="padding: 22px 24px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr>
+              <td valign="top" width="108" style="width: 108px; padding: 0 18px 0 0;">
+                <a href="https://diegopobleteweb.netlify.app/" target="_blank" rel="noopener" style="text-decoration: none;">
+                  <img src="https://diegopobleteweb.netlify.app/foto%20Diego.jpg" alt="Diego Poblete" width="90" height="90" style="display: block; width: 90px; height: 90px; border: 0; border-radius: 50%; object-fit: cover;" />
+                </a>
+              </td>
+              <td valign="top" style="padding: 0;">
+                <p style="margin: 0 0 4px; font-size: 19px; line-height: 24px; font-weight: 700; color: #243b53;">Diego Poblete Moreno</p>
+                <p style="margin: 0 0 10px; font-size: 13px; line-height: 18px; font-weight: 700; color: #577c97;">MarTech &amp; Data Analytics</p>
+                <p style="max-width: 465px; margin: 0 0 13px; font-size: 11px; line-height: 16px; color: #52616b;">MarTech Data Analytics | Automation Solutions | Server, APP, Web | Measurement Strategy, Data Governance, GA4, Firebase, GTM, MMP, API, Python, N8N, GCP and CRO</p>
+                <p style="margin: 0 0 13px; font-size: 12px; line-height: 18px; color: #52616b;">
+                  <a href="mailto:dpobletem@fen.uchile.cl" style="color: #243b53; text-decoration: none;">dpobletem@fen.uchile.cl</a>
+                  <span style="padding: 0 6px; color: #9aa5b1;">|</span>
+                  <a href="tel:+56956546097" style="color: #243b53; text-decoration: none;">+56 9 5654 6097</a>
+                </p>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                  <tr>
+                    <td style="padding: 0 8px 0 0;">
+                      <a href="https://diegopobleteweb.netlify.app/" target="_blank" rel="noopener" style="display: inline-block; padding: 8px 13px; border: 1px solid #577c97; border-radius: 16px; color: #ffffff; background: #577c97; font-size: 11px; font-weight: 700; line-height: 13px; text-decoration: none;">Visita mi web</a>
+                    </td>
+                    <td>
+                      <a href="https://wa.me/56956546097" target="_blank" rel="noopener" style="display: inline-block; padding: 8px 13px; border: 1px solid #577c97; border-radius: 16px; color: #577c97; background: #ffffff; font-size: 11px; font-weight: 700; line-height: 13px; text-decoration: none;">WhatsApp</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
