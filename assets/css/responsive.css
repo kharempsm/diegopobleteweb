@@ -3,12 +3,12 @@
 }
 @media (max-width: 1060px) {
   .layout__menu-toggle {
-    z-index: 9999;
+    z-index: 1002;
     display: block;
-    position: absolute;
-    width: 4.8rem;
-    height: 4.8rem;
-    line-height: 4.8rem;
+    position: fixed;
+    width: 5.4rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
     text-align: center;
     background-color: var(--color-secundary);
     right: 1rem;
@@ -53,10 +53,23 @@
   body {
     background-image: none;
     position: static;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
   }
 
   .layout {
     width: 100%;
+    max-width: 100%;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -64,30 +77,37 @@
 
     grid-template-areas: "content";
     grid-template-columns: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   .layout__aside {
     display: block;
-    position: absolute;
+    position: fixed;
     max-width: 33rem;
     top: 0;
     right: 0;
     bottom: 0;
     border-radius: 0;
     text-align: center;
-    overflow: auto;
-    transition: all 300ms ease-in-out;
-    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    transition: margin-right 300ms ease-in-out, opacity 300ms ease-in-out;
+    z-index: 1001;
 
     margin-right: -100%;
     opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
 
   .layout__aside--visible {
     margin-right: 0;
     opacity: 1;
     width: 100%;
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .layout__aside--hidden {
@@ -124,8 +144,12 @@
 
   .menu__link {
     text-decoration: none;
-    display: block;
-    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5.4rem;
+    padding: 1.2rem 2rem;
+    touch-action: manipulation;
   }
 
   .menu__icon {
@@ -138,7 +162,8 @@
     margin-top: 0;
     padding: 0;
     box-shadow: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    pointer-events: none;
   }
 
   .menu__link--active .menu__overlay {
@@ -155,6 +180,17 @@
     padding-bottom: 2rem;
   }
 
+  .user-info__btn,
+  .language-switcher__choice {
+    min-width: 5.4rem;
+    min-height: 5.4rem;
+  }
+
+  .mobile-menu-open .layout__content {
+    pointer-events: none;
+    user-select: none;
+  }
+
   .layout__content {
     border-radius: 0;
     background-color: transparent;
@@ -164,6 +200,30 @@
   .content__page {
     border-radius: 0;
     height: 100vh;
+    height: 100dvh;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .content__page > * {
+    min-width: 0;
+  }
+
+  .content__page h1,
+  .content__page h2,
+  .content__page h3,
+  .content__page p,
+  .content__page li {
+    overflow-wrap: anywhere;
+  }
+
+  .layout__menu-toggle:focus-visible,
+  .menu__link:focus-visible {
+    outline: 0.3rem solid #fffeca;
+    outline-offset: 0.3rem;
   }
 
   .certificates__container {
@@ -244,6 +304,14 @@
   }
   .contact__container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .content__page p,
+  .content__page li {
+    font-size: max(1.5rem, 14px);
+    line-height: 1.65;
   }
 }
 

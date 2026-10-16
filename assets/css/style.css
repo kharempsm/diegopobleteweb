@@ -432,6 +432,7 @@
   .layout__menu {
     display: block;
     position: absolute;
+    z-index: 2147483646;
     top: 0;
     right: -105px;
     background-color: var(--color-transparent);
@@ -473,6 +474,7 @@
   }
   .menu__overlay {
     position: absolute;
+    z-index: 2147483647;
     right: 0;
     margin-top: -3rem;
     opacity: 0;
@@ -1869,7 +1871,131 @@
     margin: 3rem 0 0;
   }
 
+  /* Shared project case and KPI-card system. Each .personal-info__bio is one
+     self-contained case; the KPI card is deliberately its final visual block. */
+  .content__portfolio {
+    --kpi-number-size: 45px;
+    --kpi-percent-size: 25px;
+  }
+  .content__portfolio .layout__kpi {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(2.4rem, 3vw, 3.2rem);
+    border: 0.2rem solid rgba(255, 255, 255, 0.8);
+    border-radius: 2.2rem;
+    background: var(--color-secundary);
+    box-shadow: var(--shadow-surface);
+  }
+  .content__portfolio .layout__kpi .award {
+    display: none;
+  }
+  .content__portfolio .kpi__top {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .content__portfolio .personal-info__bio .layout__kpi .kpi__top-title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 2.25vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .content__portfolio .personal-info__bio .layout__kpi .kpi__top-subtitle {
+    margin: 0.55rem 0 1.2rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .content__portfolio .knowledges__group {
+    gap: 0.7rem;
+    padding: 0 0 1.6rem;
+  }
+  .content__portfolio .knowledges__option2 {
+    display: inline-flex;
+    align-items: center;
+    min-height: 3.2rem;
+    padding: 0.45rem 1.35rem;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  .content__portfolio .kpi__bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    align-items: stretch;
+    width: 100%;
+    min-height: 14rem;
+    padding: 0;
+    gap: 0;
+    overflow: hidden;
+    border: 0.1rem solid rgba(255, 255, 255, 0.72);
+    border-radius: 2rem;
+    background: #ffffff;
+  }
+  .content__portfolio .bottom-info {
+    display: grid;
+    grid-template-rows: 6.6rem minmax(7.4rem, 1fr);
+    align-items: stretch;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    border-right: 0.15rem solid var(--color-secundary);
+  }
+  .content__portfolio .bottom-info:last-child {
+    border-right: 0;
+  }
+  .content__portfolio .kpi-1,
+  .content__portfolio .kpi-2 {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .content__portfolio .kpi-1 {
+    min-height: 6.6rem;
+    border-bottom: 0.15rem solid var(--color-secundary);
+    color: var(--color-secundary);
+    font-size: var(--kpi-number-size);
+    font-weight: 600;
+    line-height: 1;
+  }
+  .content__portfolio .kpi-1 p,
+  .content__portfolio .kpi-2 p {
+    margin: 0;
+  }
+  .content__portfolio .kpi-1 p,
+  .content__portfolio .kpi-1 .kpi__counter-value {
+    font-size: var(--kpi-number-size);
+    line-height: 1;
+  }
+  .content__portfolio .kpi-1 sup {
+    position: static;
+    font-size: var(--kpi-percent-size);
+    line-height: 1;
+    vertical-align: super;
+  }
+  .content__portfolio .kpi-2 {
+    min-height: 7.4rem;
+    padding: 1.15rem 1.35rem;
+    color: var(--color-text);
+    font-size: 1.25rem;
+    line-height: 1.45;
+    text-transform: none;
+  }
+
   @media (max-width: 600px) {
+    .content__portfolio {
+      --kpi-number-size: 34px;
+      --kpi-percent-size: 19px;
+    }
     .content__portfolio .personal-info__bio {
       padding: 2.4rem 2rem;
       border-radius: 1.8rem;
@@ -1885,6 +2011,10 @@
       top: 1.5rem;
       right: 1.8rem;
       font-size: 0.9rem;
+    }
+    .content__portfolio .layout__kpi {
+      padding: 2rem;
+      border-radius: 1.8rem;
     }
   }
 

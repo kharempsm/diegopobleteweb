@@ -5,28 +5,66 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let aside = document.querySelector(".layout__aside");
 
   if (button && icon_bars && icon_xmark && aside) {
+    // This behaviour is deliberately limited to the mobile breakpoint.
+    // Desktop navigation keeps its original CSS-only interaction.
+    const mobileMenuQuery = window.matchMedia("(max-width: 1060px)");
+    const isMobileMenu = () => mobileMenuQuery.matches;
+
+    const setMobileMenuState = (isOpen) => {
+      aside.classList.toggle("layout__aside--visible", isOpen);
+      document.body.classList.toggle("mobile-menu-open", isOpen);
+      button.setAttribute("aria-expanded", String(isOpen));
+      button.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      aside.setAttribute("aria-hidden", String(!isOpen));
+      icon_bars.style.opacity = isOpen ? 0 : 1;
+      icon_xmark.style.opacity = isOpen ? 1 : 0;
+    };
+
+    const closeMobileMenu = () => setMobileMenuState(false);
+
+    button.setAttribute("aria-controls", aside.id || "primary-navigation-panel");
+    if (!aside.id) aside.id = "primary-navigation-panel";
+    button.setAttribute("aria-expanded", "false");
+
     button.addEventListener("click", () => {
-      let visible = document.querySelector(".layout__aside--visible");
-      if (!visible) {
-        aside.classList.add("layout__aside--visible");
-        icon_bars.style.opacity = 0;
-        icon_xmark.style.opacity = 1;
+      if (!isMobileMenu()) return;
+      setMobileMenuState(!aside.classList.contains("layout__aside--visible"));
+    });
+
+    button.addEventListener("keydown", (event) => {
+      if (!isMobileMenu() || !["Enter", " "].includes(event.key)) return;
+      event.preventDefault();
+      setMobileMenuState(!aside.classList.contains("layout__aside--visible"));
+    });
+
+    // Never cancel the anchor's default navigation. Closing first only removes
+    // the mobile overlay while the browser follows the link normally.
+    aside.addEventListener("click", (event) => {
+      if (!isMobileMenu() || !event.target.closest(".menu__link")) return;
+      closeMobileMenu();
+    });
+
+    const syncMenuWithViewport = () => {
+      if (isMobileMenu()) {
+        closeMobileMenu();
       } else {
         aside.classList.remove("layout__aside--visible");
+        document.body.classList.remove("mobile-menu-open");
+        aside.removeAttribute("aria-hidden");
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-label", "Open navigation");
         icon_bars.style.opacity = 1;
         icon_xmark.style.opacity = 0;
       }
-    });
+    };
 
-    window.addEventListener("resize", () => {
-      let size = parseInt(document.body.clientWidth);
-
-      if (size <= 1060) {
-        aside.classList.remove("layout__aside--visible");
-        icon_bars.style.opacity = 1;
-        icon_xmark.style.opacity = 0;
-      }
-    });
+    if (typeof mobileMenuQuery.addEventListener === "function") {
+      mobileMenuQuery.addEventListener("change", syncMenuWithViewport);
+    } else {
+      // Safari versions that predate MediaQueryList.addEventListener.
+      mobileMenuQuery.addListener(syncMenuWithViewport);
+    }
+    syncMenuWithViewport();
   }
 
   if (!document.querySelector(".language-switcher")) {
