@@ -265,20 +265,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
 // updateMessage();
 
 
-//IntersectionObserver
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      const delay = index * 0.2; // Ajusta el valor para controlar el delay
-      setTimeout(() => {
-        entry.target.classList.add('show');
-      }, delay * 800);
-    } else {
-      entry.target.classList.remove('show');
-    }
+// Reveal animations are scoped so they cannot collide with page-level scripts.
+// index.html has its own `observer` variable; keeping this state local prevents
+// a global `const` redeclaration from stopping the mobile menu initialization.
+(() => {
+  const menuRevealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        const delay = index * 0.2;
+        setTimeout(() => {
+          entry.target.classList.add('show');
+        }, delay * 800);
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
   });
-});
 
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+  const menuHiddenElements = document.querySelectorAll('.hidden');
+  menuHiddenElements.forEach((el) => menuRevealObserver.observe(el));
+})();
